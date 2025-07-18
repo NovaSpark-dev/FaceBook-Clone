@@ -1,0 +1,169 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(184, 184, 184, 0.3);
+}
+
+.left-section img{
+    height: 60px;
+    width: 60px;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 100px;
+}
+
+.searchbar{
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+}
+
+.searchbar::placeholder{
+    font-size: 15px;
+    font-family: Segoe UI;
+    padding-left: 20px;
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.middle-section img{
+    width: 50px;
+    height: 44px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+@media (max-width: 886px) {
+    .middle-section{
+        opacity: 0;
+    }
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.right-section img{
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+}
+
+.home-tooltip,
+.friend-tooltip,
+.video-tooltip,
+.group-tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-tooltip .tooltip,
+.friend-tooltip .tooltip,
+.video-tooltip .tooltip,
+.group-tooltip .tooltip{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    background-color: rgb(78, 78, 78);
+    color: rgb(235, 220, 220);
+    font-size: 13px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 4px 4px rgba(145, 140, 140, 0.3);
+}
+
+.home-tooltip:hover .tooltip,
+.friend-tooltip:hover .tooltip,
+.video-tooltip:hover .tooltip,
+.group-tooltip:hover .tooltip{
+    opacity: 1;
+}
+
+.meun-tooltip,
+.messenger-tooltip,
+.notification-tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.meun-tooltip .right-tooltip{
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+    background-color: rgb(78, 78, 78);
+    color: rgb(235, 220, 220);
+    font-size: 13px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 4px 4px rgba(145, 140, 140, 0.3);
+}
+
+.meun-tooltip:hover  .right-tooltip,
+.messenger-tooltip:hover  .right-tooltip,
+.notification-tooltip:hover  .right-tooltip{
+    opacity: 1;
+}
+
+
+.messenger-tooltip .right-tooltip,
+.notification-tooltip .right-tooltip{
+    position: absolute;
+    bottom: -30px;
+    left: -24px;
+    background-color: rgb(78, 78, 78);
+    color: rgb(235, 220, 220);
+    font-size: 13px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 4px 4px rgba(145, 140, 140, 0.3);
+}
+
+.notification-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(219, 0, 0);
+    color: white;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: -5px;
+    left: 16px;
+}

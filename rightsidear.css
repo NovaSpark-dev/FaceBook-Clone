@@ -1,0 +1,19 @@
+.rightsidebar{
+    right: 0px;
+    position: fixed;
+    top: 70px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1168px) {
+    .rightsidebar{
+        opacity: 0;
+    }
+}
+
+.contacts{
+    color: #65686C;
+    font-weight: 500;
+}

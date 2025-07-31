@@ -437,3 +437,34 @@ section {
   width: 500px;
 
 }
+
+@media (max-width: 768px) {
+  .friend-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .friend-img, .friend-info {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .add-friend {
+    width: 90%;
+    background-color: rgb(181, 209, 255);
+    border: none;
+    height: 36px;
+    font-size: 15px;
+    color: rgb(4, 92, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 7px;
+    transition: 0.5s;
+  }
+
+  .add-friend:hover{
+  background-color: rgb(41, 71, 238);
+  color: white;
+}
+}

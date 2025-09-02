@@ -40,6 +40,10 @@ summary::-webkit-details-marker {
     .sidebar-link{
         opacity: 0;
     }
+
+    .leftsidebar {
+        opacity: 0;
+    }
 }
 
 .sidebar-link:hover{

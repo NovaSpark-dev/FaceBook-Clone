@@ -1,9 +1,31 @@
 .leftsidebar{
     position: fixed;
     bottom: 0;
-    left: 15px;
-    top: 70px;
+    left: 0px;
+    top: 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.15);
 }
+
+/* Hide default arrow */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Hide the default arrow (Firefox) */
+  details > summary::marker { content: ""; }
+
+  summary {
+    color: rgb(2, 103, 255);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
 
 .sidebar-link{
     display: flex;
